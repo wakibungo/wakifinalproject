@@ -1,0 +1,785 @@
+
+tuloy = "y"
+while tuloy == "y":
+  print("\n=====================================================|")
+  print("        💻ACT102 - WAKI'S CODING TUTORIALS💻         |")
+  print("=====================================================|")
+  print("(1) Introduction to Programming                      |")
+  print("(2) Python Basic Syntax                              |")
+  print("(3) Basic Data Types in Python                       |")
+  print("(4) Arithmetic Operators and Expressions             |")
+  print("(5) Basic Input and Output in Python                 |")
+  print("(6) Conditional Statements in Python                 |")
+  print("(7) Logical Operators                                |")
+  print("(8) Introduction to Iteration and Loops              |")
+  print("(9) Waki's Python Game                               |")
+  print("(                  ⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️                          |")
+  print("==========================================")
+
+  choi = input("\nSelect a lesson to tackle (1-9): ")
+
+#=======================================================================================1
+  if choi == "1":
+
+
+      print("💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚")
+      print("\n--------------- . Introduction to Programming ---------------")
+      print("|")
+      print("|A programming language is a special language that computers")
+      print("|         understand and use to perform tasks.")
+      print("|\n|Python is a widely-used programming language that")
+      print("|       was created by Guido van Rossum in 1991.")
+      print("|\n|Python is a high-level, interpreted, and general-purpose .")
+      print("|   programming language designed to be simple, readable,")
+      print("|                    and easy to learn")
+      print("|")
+      print("--------------------------------------------------------------")
+      print("💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚")
+
+#==========================================================================================2
+
+  elif choi == "2":
+    print("\n-------------------------------------------Python Basic Syntax-------------------------------------------")
+    print("|")
+    print("|     Syntax refers to the set of rules that tells us how to correctly write a program in Python.")
+    print("|                             1. Python is Case-Sensitive")
+    print("|                 2. Indentation - Unlike other programming languages,\n|")
+    print("|🟢                    The print() function displays information on the screen.\n|")
+    print("|🟢                    print – the function that displays output.\n|")
+    print("|🟢                    () – parentheses that contain the information to be displayed.\n|")
+    print("|🟢                    value – the text, number, variable, or expression you to show.\n|")
+    print("|🟢                    Python uses indentation (spaces) to define blocks of code.\n|")
+    print("|🟢                    # Comments are ignored by Python, they're used to explain the code.\n|")
+    print("|🟢                    Numbers under a variable doesnt need quotation mark(''), ")
+    print("|                              but letters and words do.\n|  ")
+    print("|----------------------------------------------------------------------------------------------------------")
+    print("|")
+    print("|                 A variable is a named storage location used to keep data in a program.  ")
+    print("|                   The value of a variable can change while the program is running.")
+    print("|                                      Example: a, b, c, age, name")
+    print("|----------------------------------------------------------------------------------------------------------")
+    print("|                         ||  Variable name: the name we choose to represent data  ||")
+    print("|                         ||  |                                                    || ")
+    print("|                         ||  L__> age = 20 <---- stored value:                    || ")
+    print("|                         ||                      The data we store in the variable||")
+    print("|----------------------------------------------------------------------------------------------------------")
+    print("|                                         Variable Naming Rules: ")
+    print("|")
+    print("|🟢                 A variable name must start with a letter or the underscore character.")
+    print("|🟢                           A variable name cannot start with a number.")
+    print("|🟢                               Variable names are case-sensitive ")
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+    print(" \n\nPython code\n")
+    print("x = 5")
+    print("y = '' John'' ")
+    print("print(x)")
+    print("print(y)")
+    print(" \nRESULT:\n")
+    print("5")
+    print("John\n")
+
+#======================================================================================================3
+
+  elif choi == "3":
+    print("\n-------------------------------------- basic Data Types in Python---------------------------------------")
+    print("|")
+    print("|🟢                     Data types are categories that tell Python what kind of ")
+    print("|                                         data a variable stores.")
+    print("|🟢              They determine the type of value a variable can hold and what operations ")
+    print("|                                     can be performed on that value.")
+    print("|")
+    print("|")
+    print("|                  [1,2,3] int(Integer numbers): Whole numbers that has no decimal part.")
+    print("|                                      example: 1, 4, 20, -30, 10000 ")
+    print("|")
+    print("|")
+    print("|                       [2.12] float(Decimal numbers): Number with a decimal point.")
+    print("|                                       example: 12.43, 1.1, -0.01")
+    print("|")
+    print("|")
+    print("|                     ['' ''] str(Strings or Text): Text or characters insides quotes.")
+    print("|            example: ''mapapa olala'', ''mapapa olala sa piling mo'', ''dong digidigidigidong''")
+    print("|")
+    print("|")
+    print("|                 [T/F] bool(Boolean values): Represents one of two values: true or false.")
+    print("|                                          example: True, False")
+    print("|")
+    print("|")
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+
+    print("                                               Python code")
+    print("1 age = 20")
+    print("2 price = 99.99")
+    print("3 name = 'Juaqui'")
+    print("4 is_active = True")
+    print("5")
+    print("6 print(type(age))")
+    print("7 print(type(price))")
+    print("\nOutput\n")
+    print("<class 'int'>")
+    print("<class 'float'>")
+    print("")
+    print("")
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+    print("                                                 EXERCISE: \n")
+
+    ans = input("                                 What data type is  45.5? (int/float/str/bool): ")
+    print("")
+
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+
+    if ans == "float":
+      print("Correct! Numbers with decimals are floats.\n")
+    else:
+      print("Incorrect. The answer is float\n")
+#====================================4
+
+  elif choi == "4":
+    print("\n---------------------------------Arithmetic Operators and Expressions-----------------------------------")
+    print("\n          Arithmetic operators are symbols used to perform mathematical calculations on numbers. ")
+    print("                   They work the same way as the operators used in everyday mathematics.\n")
+    print("")
+
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+    print("|                                                                                                         |")
+    print("|  (OPERATOR)    (DESCRIPTION)           (EXAMPLE)   (RESULT)                                             |")
+    print("|      +         ADDITION: add            5 + 3         8                                                 |")
+    print("|                two values.                                                                              |")
+    print("|                                                                                                         |")
+    print("|      -         SUBRACT: subracts        10 - 4        6                                                 |")
+    print("|                the second value                                                                         |")
+    print("|                to first.                                                                                |")
+    print("|                                                                                                         |")
+    print("|      *         MULTIPLY:                7 * 2         14                                                |")
+    print("|                multiplies two                                                                           |")
+    print("|                values.                                                                                  |")
+    print("|                                                                                                         |")
+    print("|      /         DIVIDE: divides          15 / 3        5.0                                               |")
+    print("|                two value and                                                                            |")
+    print("|                returns a decimal.                                                                       |")
+    print("|                                                                                                         |")
+    print("|      //        Floor DIVISION:          17 // 3       5                                                 |")
+    print("|                divides two value and                                                                    |")
+    print("|                returns a whole.                                                                         |")
+    print("|                                                                                                         |")
+    print("|      %         Modulus: returns         10 % 3        1                                                 |")
+    print("|                the remainder of                                                                         |")
+    print("|                the division.                                                                            |")
+    print("|                                                                                                         |")
+    print("|      %         EXPONENTIATION:          2 ** 3        8                                                 |")
+    print("|                raises the first value                                                                   |")
+    print("|                to the power of the                                                                      |")
+    print("|                second.                                                                                  |")
+    print("|                                                                                                         |")
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+    print("")
+    print("")
+    print("                   An expression is a combination of values, variables, and")
+    print("                           operators that evaluates to a result.")
+    print("")
+    print("                                               Python Code")
+    print("1 a = 10 # first number")
+    print("2 b = 5 # second number")
+    print("3")
+    print("4 result = a + b # add the numbers")
+    print("5 print(''The result is:'', result) # display the result")
+    print("\nOutput\n")
+    print("10 + 5 = 15")
+    print("The result is: 15")
+    print("")
+    print("")
+
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+    print("")
+    print("                                                 EXERCISE: \n")
+
+    ans1 = float(input("                                                 15 + 8? "))
+    if ans1 == 15 + 8:
+        print("                                                Correct! 15 + 8 = 23\n")
+    else:
+        print("                                                Incorrect. The answer is 23\n")
+
+
+    ans2 = float(input("                                                 50 - 20? "))
+    if ans2 == 50 - 20:
+        print("                                                Correct! 50 - 20 = 30\n")
+    else:
+        print("                                                Incorrect. The answer is 30\n")
+
+
+    ans3 = float(input("                                                 6 * 5? "))
+    if ans3 == 6 * 5:
+        print("                                                Correct! 6 * 5 = 30\n")
+    else:
+        print("                                                Incorrect. The answer is 30\n")
+
+
+    ans4 = float(input("                                                 20 / 4? "))
+    if ans4 == 20 / 4:
+        print("                                                Correct! 20 / 4 = 5.0\n")
+    else:
+        print("                                                Incorrect. The answer is 5.0\n")
+
+
+    ans5 = float(input("                                                 17 // 3? "))
+    if ans5 == 17 // 3:
+        print("                                                Correct! 17 // 3 = 5\n")
+    else:
+        print("                                                Incorrect. The answer is 5\n")
+
+
+    ans6 = float(input("                                                 10 % 3? "))
+    if ans6 == 10 % 3:
+        print("                                                Correct! 10 % 3 = 1\n")
+    else:
+        print("                                                Incorrect. The answer is 1\n")
+
+
+    ans7 = float(input("                                                 2 ** 3? "))
+    if ans7 == 2 ** 3:
+        print("                                                Correct! 2 ** 3 = 8\n")
+    else:
+        print("                                                Incorrect. The answer is 8\n")
+    print("")
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+
+
+
+  # ==========================================================================================5
+
+  elif choi == "5":
+    print("")
+    print("\n-------------------------------------Basic Input and Output in Python-------------------------------------")
+    print("|                                                                                                          |")
+    print("|    Purpose of input in programming Real-life analogies (e.g., asking for a user's name and responding)   |")
+    print("|                                          Using input() function                                          |")
+    print("|                              Syntax: variable = input(''Prompt message: '')                              |")
+    print("|                                  All input is string type by default                                     |")
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+    print("\n                                               Python code\n")
+    print("name = input(''Enter your name: '')")
+    print("age = input(''Enter your age: '')")
+    print("print(''Name: '', name)")
+    print("print(''Age: '', age)")
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+    print("\n                                EXAMPLE OUTPUT                                \n")
+
+    user_name = input("Enter Name: ")
+    w = float(input("Enter Weight (kg): "))
+    h = float(input("Enter Height (m): "))
+    bmi = w / (h * h)
+    print("\n                                                               \n")
+    print("========== BMI RESULT ==========")
+    print("Name     :", user_name)
+    print("Weight   :", w, "kg")
+    print("Height   :", h, "m")
+    print("BMI      :", bmi)
+    print("================================")
+
+    print("\n---------------------------------------Python code of the example---------------------------------------\n")
+
+    print("print(''user_name = input(''Enter Name: '')")
+    print("weight = float(input(''Enter Weight (kg): ''))")
+    print("height = float(input(''Enter Height (m): ''))")
+    print("bmi = weight / (height * height)")
+    print("")
+    print("print(''========== BMI RESULT =========='')")
+    print("print(''Name     :'', user_name)           ")
+    print("print(''Weight   :'', weight, ''kg'')        ")
+    print("print(''print(''Height   :'', height, ''m'')")
+    print("print(''BMI      :'', bmi)")
+    print("print('''================================'')")
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+
+  # ==========================================================================================6
+
+  elif choi == "6":
+      print("\n------------------------------------Conditional Statements in Python-----------------------------------")
+      print("|")
+      print("|                            A conditional statement allows a program to make")
+      print("|                      decisions based on whether a condition is True or False by")
+      print("|                                 using if, elif, and else statements")
+      print("|")
+      print(
+        "------------------------------------------------------------------------------------------------------------")
+
+
+      print("\n                                               Python code \n")
+      print("score = int(input('Enter your score: '))")
+      print("if score >= 75:")
+      print("    print('Status: Passed!')")
+      print("else:")
+      print("    print('Status: Failed!')")
+      print(
+        "------------------------------------------------------------------------------------------------------------")
+      print("                                  EXAMPLE OUTPUT\n")
+
+      score = int(input("Enter your score: "))
+      if score >= 75:
+          print("Status: Passed!")
+      else:
+          print("Status: Failed!")
+
+      print("")
+      print("-------------------------------------Python code of the example-------------------------------------")
+      print("")
+      print("score = int(input('Enter your score: '))")
+      print("if score >= 75:")
+      print("    print('Status: Passed!')")
+      print("else:")
+      print("    print('Status: Failed!')")
+      print("")
+      print(
+        "------------------------------------------------------------------------------------------------------------")
+
+      print("")
+
+  # ==========================================================================================7
+
+  elif choi == "7":
+    print("\n-------------------------------------------Logical Operators------------------------------------------------- ")
+    print("|                                                                                                          |")
+    print("|             Logical operators are used to combine or reverse conditions in a Python program.             |")
+    print("|                                                                                                          |")
+    print("|  (OPERATOR)    (DESCRIPTION)                       (EXAMPLE)                        (RESULT)             |")
+    print("|      and       Both conditions must be True           age >= 18 True                yes                  |")
+    print("|                                                       has_id True                                        |")
+    print("|                                                                                                          |")
+    print("|      or        At least one condition must be True    day == ''Saturday''=True      t or f = t           |")
+    print("|                                                       day == ''Sunday''=False                            |")
+    print("|                                                                                                          |")
+    print("|      not       Reverses the result                    true                         False                 |")
+    print("|                                                                                                          |")
+    print("|                                                                                                          |")
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+
+
+    print("")
+    print("                                               Python Code ")
+    print("1 has_id = ''yes''")
+    print("2 is_enrolled = ''yes''")
+    print("3")
+    print("4 if has_id == ''yes'' and is_enrolled == ''yes'':")
+    print("5     print('Access Granted')")
+    print("\nOutput\n")
+    print("Access Granted")
+    print("")
+    print("")
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+    print("                                               EXERCISE: ")
+
+    ans1 = input(
+      """1. If has_id = 'yes' and is_enrolled = 'yes', does (has_id == 'yes' and is_enrolled == 'yes')
+                                 evaluate to True or False? (True/False): """)
+    if ans1 == "True" or ans1 == "true":
+      print("                                    Correct! Both conditions are met, so it is True.\n")
+    else:
+      print("                                    Incorrect. The answer is True\n")
+
+
+    ans2 = input(""" 2. If has_id = 'yes' and is_enrolled = 'no', does (has_id == 'yes' and is_enrolled == 'yes')
+                                   evaluate to True or False? (True/False): """)
+    if ans2 == "False" or ans2 == "false":
+      print("                                    Correct! Because not both are 'yes', 'and' evaluates to False.\n")
+    else:
+      print("                                    Incorrect. The answer is False\n")
+
+
+    ans3 = input(
+      " 3. If has_id = 'no' and is_enrolled = 'yes', does (has_id == 'yes' or is_enrolled == 'yes') evaluate to True or False? (True/False): ")
+    if ans3 == "True" or ans3 == "true":
+      print("                                    Correct! With 'or', only one condition needs to be true.\n")
+    else:
+      print("                                    Incorrect. The answer is True\n")
+
+  # ==========================================================================================8
+
+
+  elif choi == "8":
+    print("")
+    print("--------------------------------------------Iteration and Loop---------------------------------------------")
+    print("|                 Iteration means repeating a process. In programming, it means repeatedly                |")
+    print("|                 executing a set of instructions. Each repetition is called an iteration.                |")
+    print("|                                                                                                         |")
+    print("|  (CONCEPT)     (DESCRIPTION)                                  (EXAMPLE)                                 |")
+    print("|    for loop    Repeats instructions for each item in         for number in range(3):                    |")
+    print("|                a sequence. Useful when known.                    print('Welcome to Python!')            |")
+    print("|                                                                                                         |")
+    print("|    while loop  Repeats instructions while a condition        count = 1                                  |")
+    print("|                is True. Useful for conditions.               while count <= 3:                          |")
+    print("|                                                                  print('Hello!')                        |")
+    print("|                                                                  count += 1                             |")
+    print("|                                                                                                         |")
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+
+    print("                                            Python Code")
+    print("1 count = 1")
+    print("2 while count <= 3:")
+    print("3     print('Welcome to Python!')")
+    print("4     count += 1")
+    print("\nOutput\n")
+    print("Welcome to Python!")
+    print("Welcome to Python!")
+    print("Welcome to Python!")
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+
+    print(" \n EXERCISE: \n")
+
+    ans = float(
+      input("If a loop runs `for number in range(2): print('Welcome!')`, how many times does 'Welcome!' print? "))
+
+    if ans == 2:
+      print("                                       Correct")
+    else:
+      print("Incorrect. It prints 2 times\n")
+
+    print(
+      "------------------------------------------------------------------------------------------------------------")
+
+  # ==========================================================================================9
+
+  elif choi == "9":
+
+    tuloy = "n"
+
+
+
+  else:
+    print("Invalid selection. Please choose a number from 1 to 9.")
+
+
+  if choi != "9":
+    print("\n===================================================|")
+    print("        💻ACT102 - WAKI'S CODING TUTORIALS💻         |")
+    print("=====================================================|")
+    print("\nLESSON DONE!")
+    tuloy = input("Do you want to continue on Waki's Python Game? (y/n): ")
+
+
+    if tuloy == "n":
+      print("\n===================================================|")
+      print("        💻ACT102 - WAKI'S CODING TUTORIALS💻         |")
+      print("=====================================================|")
+      print("\nThank you!!!")
+
+
+
+print("==============================================")
+print("          WAKI'S PYTHON  GAME")
+print("==============================================")
+
+
+score = 0
+
+input("\nPress ENTER to start the quiz...")
+
+
+print("\n1. Who created Python?")
+print("A. Waki Pogi")
+print("B. Guido van Rossum")
+print("C. Elon Musk")
+print("D. Mekus Mekus ")
+ans = input("Answer: ").upper()
+
+if ans == "B":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is B.")
+
+print("\n2. What function displays output?")
+print("A. input()")
+print("B. print()")
+print("C. type()")
+print("D. Output")
+ans = input("Answer: ").upper()
+
+if ans == "B":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is B.")
+
+
+print("\n3. What is a variable?")
+print("A. A storage location for data")
+print("B. A type of motherboard")
+print("C. A programming language")
+print("D. A computer")
+ans = input("Answer: ").upper()
+
+if ans == "A":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is A.")
+
+
+print("\n4. What data type is 25?")
+print("A. alt")
+print("B. str")
+print("C. int")
+print("D. afk")
+ans = input("Answer: ").upper()
+
+if ans == "C":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is C.")
+
+
+print("\n5. What data type is 12.5?")
+print("A. int")
+print("B. bul")
+print("C. bool")
+print("D. float ")
+ans = input("Answer: ").upper()
+
+if ans == "D":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is B.")
+
+
+print("\n6. What data type is 'Hello'?")
+print("A. str")
+print("B. int")
+print("C. float")
+print("D. bool")
+ans = input("Answer: ").upper()
+
+if ans == "A":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is A.")
+
+
+print("\n7. What is the result of 5 + 3?")
+print("A. 6")
+print("B. 8")
+print("C. 9")
+print("D. 21")
+ans = input("Answer: ").upper()
+
+if ans == "B":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is B.")
+
+
+print("\n8. What operator is used for multiplication?")
+print("A. +")
+print("B. /")
+print("C. *")
+print("D. '' ")
+ans = input("Answer: ").upper()
+
+if ans == "C":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is C.")
+
+
+print("\n9. What is the result of 10 - 4?")
+print("A. 1")
+print("B. 5")
+print("C. 4")
+print("D. 6")
+ans = input("Answer: ").upper()
+
+if ans == "A":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is A.")
+
+
+print("\n10. What is the result of 10 % 3?")
+print("A. 3")
+print("B. 1")
+print("C. 0")
+print("D. 2")
+ans = input("Answer: ").upper()
+
+if ans == "B":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is B.")
+
+print("\n11. What function receives user input?")
+print("A. print()")
+print("B. input()")
+print("C. type()")
+print("D. output()")
+ans = input("Answer: ").upper()
+
+if ans == "B":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is B.")
+
+
+print("\n12. What is the default data type of input()?")
+print("A. str")
+print("B. int")
+print("C. float")
+print("D. default")
+ans = input("Answer: ").upper()
+
+if ans == "A":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is A.")
+
+
+print("\n13. Which statement is used for choices?")
+print("A. while")
+print("B. if")
+print("C. print")
+print("D. choi ")
+ans = input("Answer: ").upper()
+
+if ans == "B":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is B.")
+
+
+print("\n14. What statement runs when the if condition is False?")
+print("A. else")
+print("B. print")
+print("C. input")
+print("D  break")
+ans = input("Answer: ").upper()
+
+if ans == "A":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is A.")
+
+print("\n15. What does AND operator need?")
+print("A. Both conditions are True")
+print("B. Only one must be True")
+print("C. Both are False")
+print("D. Both true are AND ")
+ans = input("Answer: ").upper()
+
+if ans == "A":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is A.")
+
+
+print("\n16. What does OR operator need?")
+print("A. Both conditions are False")
+print("B. Operator must be AND")
+print("C. Both are True")
+print("D. At least one condition must be True")
+ans = input("Answer: ").upper()
+
+if ans == "D":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is B.")
+
+
+print("\n17. What does the NOT operator do?")
+print("A. Adds numbers")
+print("B. Multiplies numbers")
+print("C. Reverses a condition")
+print("D. Cancels the operator")
+ans = input("Answer: ").upper()
+
+if ans == "C":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is C.")
+
+
+print("\n18. Which loop repeats while a condition is True?")
+print("A. if")
+print("B. while")
+print("C. break")
+print("D. else")
+ans = input("Answer: ").upper()
+
+if ans == "B":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is B.")
+
+
+print("\n19. How many times does range(3) repeat?")
+print("A. 2")
+print("B. 3")
+print("C. 4")
+print("D. 1")
+ans = input("Answer: ").upper()
+
+if ans == "B":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is B.")
+
+print("\n20. What is iteration?")
+print("A. Starting a process")
+print("B. Deleting a program")
+print("C. Stopping a program")
+print("D. Repeating a process")
+ans = input("Answer: ").upper()
+
+if ans == "D":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Incorrect! The answer is A.")
+
+print("")
+print("==============================================")
+print("|                 QUIZ RESULTS                |")
+print("==============================================")
+
+print("Your Score:", score, "/ 20")
+
+if score == 20:
+    print("PERFECT!")
+elif score >= 15:
+    print("HALA PWEDE TO")
+elif score >= 10:
+    print("ANG LALA!")
+else:
+    print("ARAY KOPO")
+
+print("==============================================")
+print("|          THANK YOU FOR PLAYING!             |")
+print("==============================================")
