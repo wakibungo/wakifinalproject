@@ -12,8 +12,9 @@ while tuloy == "y":
   print("(6) Conditional Statements in Python                 |")
   print("(7) Logical Operators                                |")
   print("(8) Introduction to Iteration and Loops              |")
+  print("                                                     |")
   print("(9) Waki's Python Game                               |")
-  print("(                  ⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️                          |")
+  print("                   ⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️                          |")
   print("==========================================")
 
   choi = input("\nSelect a lesson to tackle (1-9): ")
@@ -126,7 +127,7 @@ while tuloy == "y":
       "------------------------------------------------------------------------------------------------------------")
     print("                                                 EXERCISE: \n")
 
-    ans = input("                                 What data type is  45.5? (int/float/str/bool): ")
+    ans = input("                                 What data type is  45.5? (int/float/str/bool): ").lower()
     print("")
 
     print(
@@ -171,7 +172,7 @@ while tuloy == "y":
     print("|                the remainder of                                                                         |")
     print("|                the division.                                                                            |")
     print("|                                                                                                         |")
-    print("|      %         EXPONENTIATION:          2 ** 3        8                                                 |")
+    print("|      **         EXPONENTIATION:          2 ** 3        8                                                 |")
     print("|                raises the first value                                                                   |")
     print("|                to the power of the                                                                      |")
     print("|                second.                                                                                  |")
@@ -267,7 +268,7 @@ while tuloy == "y":
       "------------------------------------------------------------------------------------------------------------")
     print("\n                                               Python code\n")
     print("name = input(''Enter your name: '')")
-    print("age = input(''Enter your age: '')")
+    print("age = int(input(''Enter your age: ''))")
     print("print(''Name: '', name)")
     print("print(''Age: '', age)")
     print(
@@ -277,30 +278,36 @@ while tuloy == "y":
     user_name = input("Enter Name: ")
     w = float(input("Enter Weight (kg): "))
     h = float(input("Enter Height (m): "))
-    bmi = w / (h * h)
-    print("\n                                                               \n")
-    print("========== BMI RESULT ==========")
-    print("Name     :", user_name)
-    print("Weight   :", w, "kg")
-    print("Height   :", h, "m")
-    print("BMI      :", bmi)
-    print("================================")
+
+    if h > 0:
+      bmi = w / (h * h)
+      print("\n                                                               \n")
+      print("========== BMI RESULT ==========")
+      print("Name     :", user_name)
+      print("Weight   :", w, "kg")
+      print("Height   :", h, "m")
+      print("BMI      :", bmi)
+      print("================================")
+    else:
+      print("Invalid height!")
 
     print("\n---------------------------------------Python code of the example---------------------------------------\n")
 
-    print("print(''user_name = input(''Enter Name: '')")
-    print("weight = float(input(''Enter Weight (kg): ''))")
-    print("height = float(input(''Enter Height (m): ''))")
-    print("bmi = weight / (height * height)")
+    print("user_name = input('Enter Name: ')")
+    print("weight = float(input('Enter Weight (kg): '))")
+    print("height = float(input('Enter Height (m): '))")
     print("")
-    print("print(''========== BMI RESULT =========='')")
-    print("print(''Name     :'', user_name)           ")
-    print("print(''Weight   :'', weight, ''kg'')        ")
-    print("print(''print(''Height   :'', height, ''m'')")
-    print("print(''BMI      :'', bmi)")
-    print("print('''================================'')")
-    print(
-      "------------------------------------------------------------------------------------------------------------")
+    print("if h > 0:")
+    print(" bmi = weight / (height * height)")
+    print(" print('========== BMI RESULT ==========')")
+    print(" print('Name     :', user_name)")
+    print(" print('Weight   :', weight, 'kg')")
+    print(" print('Height   :', height, 'm')")
+    print(" print('BMI      :', bmi)")
+    print(" print('================================')")
+    print("else:")
+    print(" print(''Invalid height!'')")
+    print("------------------------------------------------------------------------------------------------------------")
 
   # ==========================================================================================6
 
@@ -468,7 +475,7 @@ while tuloy == "y":
     print("        💻ACT102 - WAKI'S CODING TUTORIALS💻         |")
     print("=====================================================|")
     print("\nLESSON DONE!")
-    tuloy = input("Do you want to continue on Waki's Python Game? (y/n): ")
+    tuloy = input("Do you want to continue on Waki's Python Game? (y/n): ").lower()
 
 
     if tuloy == "n":
@@ -555,7 +562,7 @@ if ans == "D":
     print("Correct!")
     score = score + 1
 else:
-    print("Incorrect! The answer is B.")
+    print("Incorrect! The answer is D.")
 
 
 print("\n6. What data type is 'Hello'?")
@@ -607,11 +614,11 @@ print("C. 4")
 print("D. 6")
 ans = input("Answer: ").upper()
 
-if ans == "A":
+if ans == "D":
     print("Correct!")
     score = score + 1
 else:
-    print("Incorrect! The answer is A.")
+    print("Incorrect! The answer is D.")
 
 
 print("\n10. What is the result of 10 % 3?")
@@ -707,7 +714,7 @@ if ans == "D":
     print("Correct!")
     score = score + 1
 else:
-    print("Incorrect! The answer is B.")
+    print("Incorrect! The answer is D.")
 
 
 print("\n17. What does the NOT operator do?")
@@ -762,7 +769,7 @@ if ans == "D":
     print("Correct!")
     score = score + 1
 else:
-    print("Incorrect! The answer is A.")
+    print("Incorrect! The answer is D.")
 
 print("")
 print("==============================================")
