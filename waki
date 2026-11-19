@@ -127,7 +127,12 @@ while tuloy == "y":
       "------------------------------------------------------------------------------------------------------------")
     print("                                                 EXERCISE: \n")
 
-    ans = input("                                 What data type is  45.5? (int/float/str/bool): ").lower()
+    while True:
+      ans = input("                                 What data type is  45.5? (int/float/str/bool): ").strip().lower()
+      if ans == "int" or ans == "float" or ans == "str" or ans == "bool":
+        break
+      print("                                 Invalid choice! Please enter int, float, str, or bool.\n")
+
     print("")
 
     print(
@@ -136,7 +141,9 @@ while tuloy == "y":
     if ans == "float":
       print("Correct! Numbers with decimals are floats.\n")
     else:
-      print("Incorrect. The answer is float\n")
+      print(f"Incorrect. '{ans}' is not the right data type for 45.5—the answer is float.\n")
+      print("------------------------------------------------------------------------------------------------------------")
+
 #====================================4
 
   elif choi == "4":
@@ -198,59 +205,51 @@ while tuloy == "y":
 
     print(
       "------------------------------------------------------------------------------------------------------------")
-    print("")
     print("                                                 EXERCISE: \n")
 
-    ans1 = float(input("                                                 15 + 8? "))
-    if ans1 == 15 + 8:
-        print("                                                Correct! 15 + 8 = 23\n")
+    ans1 = input("                                                 15 + 8? ")
+    if ans1 == "23":
+      print("                                                Correct! 15 + 8 = 23\n")
     else:
-        print("                                                Incorrect. The answer is 23\n")
+      print("                                                Incorrect. The answer is 23\n")
 
-
-    ans2 = float(input("                                                 50 - 20? "))
-    if ans2 == 50 - 20:
-        print("                                                Correct! 50 - 20 = 30\n")
+    ans2 = input("                                                 50 - 20? ")
+    if ans2 == "30":
+      print("                                                Correct! 50 - 20 = 30\n")
     else:
-        print("                                                Incorrect. The answer is 30\n")
+      print("                                                Incorrect. The answer is 30\n")
 
-
-    ans3 = float(input("                                                 6 * 5? "))
-    if ans3 == 6 * 5:
-        print("                                                Correct! 6 * 5 = 30\n")
+    ans3 = input("                                                 6 * 5? ")
+    if ans3 == "30":
+      print("                                                Correct! 6 * 5 = 30\n")
     else:
-        print("                                                Incorrect. The answer is 30\n")
+      print("                                                Incorrect. The answer is 30\n")
 
-
-    ans4 = float(input("                                                 20 / 4? "))
-    if ans4 == 20 / 4:
-        print("                                                Correct! 20 / 4 = 5.0\n")
+    ans4 = input("                                                 20 / 4? ")
+    if ans4 == "5":
+      print("                                                Correct! 20 / 4 = 5.0\n")
     else:
-        print("                                                Incorrect. The answer is 5.0\n")
+      print("                                                Incorrect. The answer is 5.0\n")
 
-
-    ans5 = float(input("                                                 17 // 3? "))
-    if ans5 == 17 // 3:
-        print("                                                Correct! 17 // 3 = 5\n")
+    ans5 = input("                                                 17 // 3? ")
+    if ans5 == "5":
+      print("                                                Correct! 17 // 3 = 5\n")
     else:
-        print("                                                Incorrect. The answer is 5\n")
+      print("                                                Incorrect. The answer is 5\n")
 
-
-    ans6 = float(input("                                                 10 % 3? "))
-    if ans6 == 10 % 3:
-        print("                                                Correct! 10 % 3 = 1\n")
+    ans6 = input("                                                 10 % 3? ")
+    if ans6 == "1":
+      print("                                                Correct! 10 % 3 = 1\n")
     else:
-        print("                                                Incorrect. The answer is 1\n")
+      print("                                                Incorrect. The answer is 1\n")
 
-
-    ans7 = float(input("                                                 2 ** 3? "))
-    if ans7 == 2 ** 3:
-        print("                                                Correct! 2 ** 3 = 8\n")
+    ans7 = input("                                                 2 ** 3? ")
+    if ans7 == "8":
+      print("                                                Correct! 2 ** 3 = 8\n")
     else:
-        print("                                                Incorrect. The answer is 8\n")
+      print("                                                Incorrect. The answer is 8\n")
+
     print("")
-    print(
-      "------------------------------------------------------------------------------------------------------------")
 
 
 
@@ -273,41 +272,47 @@ while tuloy == "y":
     print("print(''Age: '', age)")
     print(
       "------------------------------------------------------------------------------------------------------------")
+
+
     print("\n                                EXAMPLE OUTPUT                                \n")
 
     user_name = input("Enter Name: ")
     w = float(input("Enter Weight (kg): "))
     h = float(input("Enter Height (m): "))
 
+    while tuloy != "y" and tuloy != "n":
+      print("Invalid input! Please enter y or n.")
+      tuloy = input("Do you want to continue on Waki's Python Game? (y/n): ").lower()
+
     if h > 0:
       bmi = w / (h * h)
-      print("\n                                                               \n")
-      print("========== BMI RESULT ==========")
+      print("------------- BMI RESULT -------------")
       print("Name     :", user_name)
       print("Weight   :", w, "kg")
       print("Height   :", h, "m")
       print("BMI      :", bmi)
-      print("================================")
+      print("            -------------")
     else:
       print("Invalid height!")
 
-    print("\n---------------------------------------Python code of the example---------------------------------------\n")
+    print(
+      "\n---------------------------------------Python code of the example---------------------------------------\n")
 
     print("user_name = input('Enter Name: ')")
     print("weight = float(input('Enter Weight (kg): '))")
     print("height = float(input('Enter Height (m): '))")
     print("")
-    print("if h > 0:")
-    print(" bmi = weight / (height * height)")
-    print(" print('========== BMI RESULT ==========')")
-    print(" print('Name     :', user_name)")
-    print(" print('Weight   :', weight, 'kg')")
-    print(" print('Height   :', height, 'm')")
-    print(" print('BMI      :', bmi)")
-    print(" print('================================')")
+    print("if height > 0:")
+    print("    bmi = weight / (height * height)")
+    print("    print('------------- BMI RESULT-------------')")
+    print("    print('Name     :', user_name)")
+    print("    print('Weight   :', weight, 'kg')")
+    print("    print('Height   :', height, 'm')")
+    print("    print('BMI      :', bmi)")
+    print("    print('          -------------')")
     print("else:")
-    print(" print(''Invalid height!'')")
-    print("------------------------------------------------------------------------------------------------------------")
+    print("    print('Invalid height!')")
+
 
   # ==========================================================================================6
 
@@ -332,11 +337,11 @@ while tuloy == "y":
         "------------------------------------------------------------------------------------------------------------")
       print("                                  EXAMPLE OUTPUT\n")
 
-      score = int(input("Enter your score: "))
-      if score >= 75:
-          print("Status: Passed!")
+      score = input("Enter your score: ")
+      if score == "75" or score == "76" or score == "77" or score == "78" or score == "79" or score == "80" or score == "81" or score == "82" or score == "83" or score == "84" or score == "85" or score == "86" or score == "87" or score == "88" or score == "89" or score == "90" or score == "91" or score == "92" or score == "93" or score == "94" or score == "95" or score == "96" or score == "97" or score == "98" or score == "99" or score == "100":
+        print("Status: Passed!")
       else:
-          print("Status: Failed!")
+        print("Status: Failed!")
 
       print("")
       print("-------------------------------------Python code of the example-------------------------------------")
@@ -388,29 +393,47 @@ while tuloy == "y":
       "------------------------------------------------------------------------------------------------------------")
     print("                                               EXERCISE: ")
 
-    ans1 = input(
-      """1. If has_id = 'yes' and is_enrolled = 'yes', does (has_id == 'yes' and is_enrolled == 'yes')
-                                 evaluate to True or False? (True/False): """)
-    if ans1 == "True" or ans1 == "true":
-      print("                                    Correct! Both conditions are met, so it is True.\n")
+    while True:
+      ans1 = input("""1. If has_id = 'yes' and is_enrolled = 'yes', does (has_id == 'yes' and is_enrolled == 'yes')
+                               evaluate to True or False? (True/False): """).lower()
+
+      if ans1 == "true" or ans1 == "false":
+        break
+      print("                                    Please enter True or False.\n")
+
+    if ans1 == "true":
+      print("                                    Correct! ")
+
+
     else:
       print("                                    Incorrect. The answer is True\n")
 
+    while True:
+      ans2 = input(""" 2. If has_id = 'yes' and is_enrolled = 'no', does (has_id == 'yes' and is_enrolled == 'yes')
+                                           evaluate to True or False? (True/False): """).lower()
+      if ans2 == "true" or ans2 == "false":
+        break
+      print("                                    Please enter True or False.\n")
 
-    ans2 = input(""" 2. If has_id = 'yes' and is_enrolled = 'no', does (has_id == 'yes' and is_enrolled == 'yes')
-                                   evaluate to True or False? (True/False): """)
-    if ans2 == "False" or ans2 == "false":
-      print("                                    Correct! Because not both are 'yes', 'and' evaluates to False.\n")
+    if ans2 == "false":
+      print("                                    Correct! \n")
     else:
-      print("                                    Incorrect. The answer is False\n")
+      print("                                    Incorrect. The answer is false\n")
 
+    while True:
+      ans3 = input(""" 3. If has_id = 'no' and is_enrolled = 'yes', does (has_id ==
+             'yes' or is_enrolled == 'yes') evaluate to True or False?
+            " (True/False): """).lower()
 
-    ans3 = input(
-      " 3. If has_id = 'no' and is_enrolled = 'yes', does (has_id == 'yes' or is_enrolled == 'yes') evaluate to True or False? (True/False): ")
-    if ans3 == "True" or ans3 == "true":
-      print("                                    Correct! With 'or', only one condition needs to be true.\n")
+      if ans3 == "true" or ans3 == "false":
+        break
+      print("                                    Please enter True or False.\n")
+
+    if ans3 == "true":
+      print("                                    Correct! \n")
     else:
       print("                                    Incorrect. The answer is True\n")
+
 
   # ==========================================================================================8
 
@@ -450,21 +473,18 @@ while tuloy == "y":
     ans = float(
       input("If a loop runs `for number in range(2): print('Welcome!')`, how many times does 'Welcome!' print? "))
 
-    if ans == 2:
-      print("                                       Correct")
+    if ans == "2" or ans == "2.0":
+      print("                                       Correct\n")
     else:
       print("Incorrect. It prints 2 times\n")
 
-    print(
-      "------------------------------------------------------------------------------------------------------------")
+    print("------------------------------------------------------------------------------------------------------------")
 
   # ==========================================================================================9
 
   elif choi == "9":
 
     tuloy = "n"
-
-
 
   else:
     print("Invalid selection. Please choose a number from 1 to 9.")
@@ -475,15 +495,15 @@ while tuloy == "y":
     print("        💻ACT102 - WAKI'S CODING TUTORIALS💻         |")
     print("=====================================================|")
     print("\nLESSON DONE!")
-    tuloy = input("Do you want to continue on Waki's Python Game? (y/n): ").lower()
+    tuloy = input("Do you want to continue on other lesson? (y/n): ").lower()
+
+    while tuloy != "y" and tuloy != "n":
+      print("Invalid input! Please enter y or n.")
+      tuloy = input("Do you want to continue on Waki's Python Game? (y/n): ").lower()
 
 
     if tuloy == "n":
-      print("\n===================================================|")
-      print("        💻ACT102 - WAKI'S CODING TUTORIALS💻         |")
-      print("=====================================================|")
       print("\nThank you!!!")
-
 
 
 print("==============================================")
@@ -501,7 +521,11 @@ print("A. Waki Pogi")
 print("B. Guido van Rossum")
 print("C. Elon Musk")
 print("D. Mekus Mekus ")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "B":
     print("Correct!")
@@ -514,7 +538,11 @@ print("A. input()")
 print("B. print()")
 print("C. type()")
 print("D. Output")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "B":
     print("Correct!")
@@ -528,7 +556,11 @@ print("A. A storage location for data")
 print("B. A type of motherboard")
 print("C. A programming language")
 print("D. A computer")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "A":
     print("Correct!")
@@ -542,7 +574,11 @@ print("A. alt")
 print("B. str")
 print("C. int")
 print("D. afk")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "C":
     print("Correct!")
@@ -556,7 +592,11 @@ print("A. int")
 print("B. bul")
 print("C. bool")
 print("D. float ")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "D":
     print("Correct!")
@@ -570,7 +610,11 @@ print("A. str")
 print("B. int")
 print("C. float")
 print("D. bool")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "A":
     print("Correct!")
@@ -584,7 +628,11 @@ print("A. 6")
 print("B. 8")
 print("C. 9")
 print("D. 21")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "B":
     print("Correct!")
@@ -598,7 +646,11 @@ print("A. +")
 print("B. /")
 print("C. *")
 print("D. '' ")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "C":
     print("Correct!")
@@ -612,7 +664,11 @@ print("A. 1")
 print("B. 5")
 print("C. 4")
 print("D. 6")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "D":
     print("Correct!")
@@ -626,7 +682,11 @@ print("A. 3")
 print("B. 1")
 print("C. 0")
 print("D. 2")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "B":
     print("Correct!")
@@ -639,7 +699,11 @@ print("A. print()")
 print("B. input()")
 print("C. type()")
 print("D. output()")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "B":
     print("Correct!")
@@ -653,7 +717,11 @@ print("A. str")
 print("B. int")
 print("C. float")
 print("D. default")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "A":
     print("Correct!")
@@ -667,7 +735,11 @@ print("A. while")
 print("B. if")
 print("C. print")
 print("D. choi ")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "B":
     print("Correct!")
@@ -680,8 +752,12 @@ print("\n14. What statement runs when the if condition is False?")
 print("A. else")
 print("B. print")
 print("C. input")
-print("D  break")
-ans = input("Answer: ").upper()
+print("D. break")
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "A":
     print("Correct!")
@@ -694,7 +770,11 @@ print("A. Both conditions are True")
 print("B. Only one must be True")
 print("C. Both are False")
 print("D. Both true are AND ")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "A":
     print("Correct!")
@@ -708,7 +788,11 @@ print("A. Both conditions are False")
 print("B. Operator must be AND")
 print("C. Both are True")
 print("D. At least one condition must be True")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "D":
     print("Correct!")
@@ -722,7 +806,11 @@ print("A. Adds numbers")
 print("B. Multiplies numbers")
 print("C. Reverses a condition")
 print("D. Cancels the operator")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "C":
     print("Correct!")
@@ -736,7 +824,11 @@ print("A. if")
 print("B. while")
 print("C. break")
 print("D. else")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "B":
     print("Correct!")
@@ -750,7 +842,11 @@ print("A. 2")
 print("B. 3")
 print("C. 4")
 print("D. 1")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "B":
     print("Correct!")
@@ -763,7 +859,11 @@ print("A. Starting a process")
 print("B. Deleting a program")
 print("C. Stopping a program")
 print("D. Repeating a process")
-ans = input("Answer: ").upper()
+while True:
+    ans = input("Answer: ").upper()
+    if ans == "A" or ans == "B" or ans == "C" or ans == "D":
+        break
+    print("Invalid input! Please enter A, B, C, or D.")
 
 if ans == "D":
     print("Correct!")
