@@ -146,10 +146,10 @@ while tuloy == "y":
       "------------------------------------------------------------------------------------------------------------")
 
     if ans == "float":
-      print("Correct! Numbers with decimals are floats.\n")
+        print("Correct! Numbers with decimals are floats.\n")
     else:
-      print(f"Incorrect. '{ans}' is not the right data type for 45.5—the answer is float.\n")
-      print("------------------------------------------------------------------------------------------------------------")
+        print(f"Incorrect. '{ans}' is not the right data type for 45.5—the answer is float.\n")
+    print("------------------------------------------------------------------------------------------------------------")
 
 #====================================4
 
@@ -510,17 +510,17 @@ while tuloy == "y":
 
     print(" \n EXERCISE: \n")
 
-
     while True:
-      try:
-        ans = float(input("If a loop runs `for number in range(2): print('Welcome!')`, how many times does 'Welcome!' print? "))
-        if ans == "2":
-          print("                                       Correct\n")
-        else:
-          print("Incorrect. It prints 2 times\n")
-          break
-      except ValueError:
-        print("Invalid input! Please enter a number.\n")
+        try:
+            ans = int(input(
+                "If a loop runs `for number in range(2): print('Welcome!')`, how many times does 'Welcome!' print? "))
+            if ans == 2:
+                print("                                       Correct\n")
+            else:
+                print("Incorrect. It prints 2 times\n")
+            break
+        except ValueError:
+            print("Invalid input! Please enter a number.\n")
 
     print("------------------------------------------------------------------------------------------------------------")
 
