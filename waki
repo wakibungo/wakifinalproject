@@ -14,8 +14,8 @@ while tuloy == "y":
   print("(8) Introduction to Iteration and Loops              |")
   print("                                                     |")
   print("(9) Waki's Python Game                               |")
-  print("                   ⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️                          |")
-  print("==========================================")
+  print("                   ⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️                |")
+  print("======================================================")
 
   choi = input("\nSelect a lesson to tackle (1-9): ")
 
@@ -533,28 +533,24 @@ while tuloy == "y":
   else:
     print("Invalid selection. Please choose a number from 1 to 9.")
 
-
   if choi != "9":
-    print("\n===================================================|")
-    print("        💻ACT102 - WAKI'S CODING TUTORIALS💻         |")
-    print("=====================================================|")
-    print("\nLESSON DONE!")
+      print("\n===================================================|")
+      print("        💻ACT102 - WAKI'S CODING TUTORIALS💻         |")
+      print("=====================================================|")
+      print("\nLESSON DONE!")
 
-adadadadada di pa tapos
-    while True:
-      tuloy = input("Do you want to continue on other lesson? (y/n): ").lower()
-      if tuloy != "y" and tuloy != "n":
-        print("Invalid input! Please enter y or n.")
-      else:
-        break
+      while True:
+          tu = input("Do you want to continue on other lesson? (y/n): ").lower()
+          if tu == "y" or tu == "n":
+              break
+          else:
+              print("Invalid input! Please enter y or n.")
 
-
-
-      tuloy = input("Do you want to continue on Waki's Python Game? (y/n): ").lower()
-
-
-    if tuloy == "n":
-      print("\nThank you!!!")
+      if tu == "y":
+          tuloy = "y"
+      elif tu == "n":
+          tuloy = "n"
+          print("\nStarting Waki's Python Game...")
 
 
 print("==============================================")
