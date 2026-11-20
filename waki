@@ -54,6 +54,9 @@ while tuloy == "y":
     print("|🟢                    Numbers under a variable doesnt need quotation mark(''), ")
     print("|                              but letters and words do.\n|  ")
     print("|----------------------------------------------------------------------------------------------------------")
+
+    input("Press Enter to continue...")
+
     print("|")
     print("|                 A variable is a named storage location used to keep data in a program.  ")
     print("|                   The value of a variable can change while the program is running.")
@@ -71,6 +74,8 @@ while tuloy == "y":
     print("|🟢                               Variable names are case-sensitive ")
     print(
       "------------------------------------------------------------------------------------------------------------")
+    input("Press Enter to continue...")
+
     print(" \n\nPython code\n")
     print("x = 5")
     print("y = '' John'' ")
@@ -110,6 +115,8 @@ while tuloy == "y":
     print(
       "------------------------------------------------------------------------------------------------------------")
 
+    input("Press Enter to continue...")
+
     print("                                               Python code")
     print("1 age = 20")
     print("2 price = 99.99")
@@ -123,8 +130,8 @@ while tuloy == "y":
     print("<class 'float'>")
     print("")
     print("")
-    print(
-      "------------------------------------------------------------------------------------------------------------")
+    print(  "------------------------------------------------------------------------------------------------------------")
+    input("Press Enter to continue...")
     print("                                                 EXERCISE: \n")
 
     while True:
@@ -151,6 +158,8 @@ while tuloy == "y":
     print("\n          Arithmetic operators are symbols used to perform mathematical calculations on numbers. ")
     print("                   They work the same way as the operators used in everyday mathematics.\n")
     print("")
+
+    input("\nPress Enter to continue..")
 
     print(
       "------------------------------------------------------------------------------------------------------------")
@@ -186,6 +195,9 @@ while tuloy == "y":
     print("|                                                                                                         |")
     print(
       "------------------------------------------------------------------------------------------------------------")
+
+    input("Press Enter to continue...")
+
     print("")
     print("")
     print("                   An expression is a combination of values, variables, and")
@@ -205,6 +217,9 @@ while tuloy == "y":
 
     print(
       "------------------------------------------------------------------------------------------------------------")
+
+    input("Press Enter to continue to EXERCISE...")
+
     print("                                                 EXERCISE: \n")
 
     ans1 = input("                                                 15 + 8? ")
@@ -277,12 +292,21 @@ while tuloy == "y":
     print("\n                                EXAMPLE OUTPUT                                \n")
 
     user_name = input("Enter Name: ")
-    w = float(input("Enter Weight (kg): "))
-    h = float(input("Enter Height (m): "))
 
-    while tuloy != "y" and tuloy != "n":
-      print("Invalid input! Please enter y or n.")
-      tuloy = input("Do you want to continue on Waki's Python Game? (y/n): ").lower()
+    while True:
+      try:
+        w = float(input("Enter Weight (kg): "))
+        break
+      except ValueError:
+        print("Invalid input! Please enter a number.\n")
+
+    while True:
+      try:
+        h = float(input("Enter Height (m): "))
+        break
+      except ValueError:
+        print("Invalid input! Please enter a number.\n")
+
 
     if h > 0:
       bmi = w / (h * h)
@@ -295,6 +319,7 @@ while tuloy == "y":
     else:
       print("Invalid height!")
 
+    input('''Press Enter to see python code of the example...''')
     print(
       "\n---------------------------------------Python code of the example---------------------------------------\n")
 
@@ -335,13 +360,23 @@ while tuloy == "y":
       print("    print('Status: Failed!')")
       print(
         "------------------------------------------------------------------------------------------------------------")
+
+      input("Press Enter to continue...")
+
       print("                                  EXAMPLE OUTPUT\n")
 
-      score = input("Enter your score: ")
-      if score == "75" or score == "76" or score == "77" or score == "78" or score == "79" or score == "80" or score == "81" or score == "82" or score == "83" or score == "84" or score == "85" or score == "86" or score == "87" or score == "88" or score == "89" or score == "90" or score == "91" or score == "92" or score == "93" or score == "94" or score == "95" or score == "96" or score == "97" or score == "98" or score == "99" or score == "100":
-        print("Status: Passed!")
-      else:
-        print("Status: Failed!")
+
+
+      while True:
+        try:
+          score = float(input("Enter your score: "))
+          if score >= 75:
+            print("Status: Passed!")
+          else:
+            print("Status: Failed!")
+          break
+        except ValueError:
+          print("Invalid input! Please enter a number.\n")
 
       print("")
       print("-------------------------------------Python code of the example-------------------------------------")
@@ -355,7 +390,7 @@ while tuloy == "y":
       print(
         "------------------------------------------------------------------------------------------------------------")
 
-      print("")
+
 
   # ==========================================================================================7
 
@@ -391,6 +426,9 @@ while tuloy == "y":
     print("")
     print(
       "------------------------------------------------------------------------------------------------------------")
+
+    input("Press Enter to continue...")
+
     print("                                               EXERCISE: ")
 
     while True:
@@ -468,15 +506,21 @@ while tuloy == "y":
     print(
       "------------------------------------------------------------------------------------------------------------")
 
+    input("Press Enter to continue...")
+
     print(" \n EXERCISE: \n")
 
-    ans = float(
-      input("If a loop runs `for number in range(2): print('Welcome!')`, how many times does 'Welcome!' print? "))
 
-    if ans == "2" or ans == "2.0":
-      print("                                       Correct\n")
-    else:
-      print("Incorrect. It prints 2 times\n")
+    while True:
+      try:
+        ans = float(input("If a loop runs `for number in range(2): print('Welcome!')`, how many times does 'Welcome!' print? "))
+        if ans == "2":
+          print("                                       Correct\n")
+        else:
+          print("Incorrect. It prints 2 times\n")
+          break
+      except ValueError:
+        print("Invalid input! Please enter a number.\n")
 
     print("------------------------------------------------------------------------------------------------------------")
 
@@ -495,10 +539,17 @@ while tuloy == "y":
     print("        💻ACT102 - WAKI'S CODING TUTORIALS💻         |")
     print("=====================================================|")
     print("\nLESSON DONE!")
-    tuloy = input("Do you want to continue on other lesson? (y/n): ").lower()
 
-    while tuloy != "y" and tuloy != "n":
-      print("Invalid input! Please enter y or n.")
+adadadadada di pa tapos
+    while True:
+      tuloy = input("Do you want to continue on other lesson? (y/n): ").lower()
+      if tuloy != "y" and tuloy != "n":
+        print("Invalid input! Please enter y or n.")
+      else:
+        break
+
+
+
       tuloy = input("Do you want to continue on Waki's Python Game? (y/n): ").lower()
 
 
