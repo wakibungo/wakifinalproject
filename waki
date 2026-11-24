@@ -43,8 +43,8 @@ while tuloy == "y":
     print("\n-------------------------------------------Python Basic Syntax-------------------------------------------")
     print("|")
     print("|     Syntax refers to the set of rules that tells us how to correctly write a program in Python.")
-    print("|                             1. Python is Case-Sensitive")
-    print("|                 2. Indentation - Unlike other programming languages,\n|")
+    print("|                      1. Python is Case-Sensitive")
+    print("|                      2. Indentation - Unlike other programming languages,\n|")
     print("|🟢                    The print() function displays information on the screen.\n|")
     print("|🟢                    print – the function that displays output.\n|")
     print("|🟢                    () – parentheses that contain the information to be displayed.\n|")
@@ -148,7 +148,7 @@ while tuloy == "y":
     if ans == "float":
         print("Correct! Numbers with decimals are floats.\n")
     else:
-        print(f"Incorrect. '{ans}' is not the right data type for 45.5—the answer is float.\n")
+        print("Incorrect. The answer is float.\n")
     print("------------------------------------------------------------------------------------------------------------")
 
 #====================================4
@@ -168,7 +168,7 @@ while tuloy == "y":
     print("|      +         ADDITION: add            5 + 3         8                                                 |")
     print("|                two values.                                                                              |")
     print("|                                                                                                         |")
-    print("|      -         SUBRACT: subracts        10 - 4        6                                                 |")
+    print("|      -         SUBTRACT: subtracts      10 - 4        6                                                 |")
     print("|                the second value                                                                         |")
     print("|                to first.                                                                                |")
     print("|                                                                                                         |")
@@ -241,7 +241,7 @@ while tuloy == "y":
       print("                                                Incorrect. The answer is 30\n")
 
     ans4 = input("                                                 20 / 4? ")
-    if ans4 == "5":
+    if ans4 == "5" or ans4 == "5.0":
       print("                                                Correct! 20 / 4 = 5.0\n")
     else:
       print("                                                Incorrect. The answer is 5.0\n")
@@ -354,7 +354,9 @@ while tuloy == "y":
 
       print("\n                                               Python code \n")
       print("score = int(input('Enter your score: '))")
-      print("if score >= 75:")
+      print("if score >= 90:")
+      print("    print('Status: Excellent!')")
+      print("elif score >= 75:")
       print("    print('Status: Passed!')")
       print("else:")
       print("    print('Status: Failed!')")
@@ -365,24 +367,26 @@ while tuloy == "y":
 
       print("                                  EXAMPLE OUTPUT\n")
 
-
-
       while True:
         try:
-          score = float(input("Enter your score: "))
-          if score >= 75:
+          score = int(input("Enter your score: "))
+          if score >= 90:
+            print("Status: Excellent!")
+          elif score >= 75:
             print("Status: Passed!")
           else:
             print("Status: Failed!")
           break
         except ValueError:
-          print("Invalid input! Please enter a number.\n")
+          print("Invalid input! Please enter a whole number.\n")
 
       print("")
       print("-------------------------------------Python code of the example-------------------------------------")
       print("")
       print("score = int(input('Enter your score: '))")
-      print("if score >= 75:")
+      print("if score >= 90:")
+      print("    print('Status: Excellent!')")
+      print("elif score >= 75:")
       print("    print('Status: Passed!')")
       print("else:")
       print("    print('Status: Failed!')")
@@ -400,13 +404,13 @@ while tuloy == "y":
     print("|             Logical operators are used to combine or reverse conditions in a Python program.             |")
     print("|                                                                                                          |")
     print("|  (OPERATOR)    (DESCRIPTION)                       (EXAMPLE)                        (RESULT)             |")
-    print("|      and       Both conditions must be True           age >= 18 True                yes                  |")
+    print("|      and       Both conditions must be True        age >= 18  -> True               True                 |")
     print("|                                                       has_id True                                        |")
     print("|                                                                                                          |")
     print("|      or        At least one condition must be True    day == ''Saturday''=True      t or f = t           |")
     print("|                                                       day == ''Sunday''=False                            |")
     print("|                                                                                                          |")
-    print("|      not       Reverses the result                    true                         False                 |")
+    print("|      not       Reverses the result                 not True                         False                |")
     print("|                                                                                                          |")
     print("|                                                                                                          |")
     print(
@@ -456,12 +460,11 @@ while tuloy == "y":
     if ans2 == "false":
       print("                                    Correct! \n")
     else:
-      print("                                    Incorrect. The answer is false\n")
+      print("                                    Incorrect. The answer is False\n")
 
     while True:
-      ans3 = input(""" 3. If has_id = 'no' and is_enrolled = 'yes', does (has_id ==
-             'yes' or is_enrolled == 'yes') evaluate to True or False?
-            " (True/False): """).lower()
+      ans3 = input("""3. If has_id = 'no' and is_enrolled = 'yes', does (has_id == 'yes' or is_enrolled == 'yes')
+                                     evaluate to True or False? (True/False): """).lower()
 
       if ans3 == "true" or ans3 == "false":
         break
@@ -487,9 +490,9 @@ while tuloy == "y":
     print("|                a sequence. Useful when known.                    print('Welcome to Python!')            |")
     print("|                                                                                                         |")
     print("|    while loop  Repeats instructions while a condition        count = 1                                  |")
-    print("|                is True. Useful for conditions.               while count <= 3:                          |")
-    print("|                                                                  print('Hello!')                        |")
-    print("|                                                                  count += 1                             |")
+    print("|                is True. when repeats depend on              while count <= 3:                           |")
+    print("|                a condition.                                     print('Hello!')                         |")
+    print("|                                                                 count += 1                              |")
     print("|                                                                                                         |")
     print(
       "------------------------------------------------------------------------------------------------------------")
@@ -515,7 +518,7 @@ while tuloy == "y":
             ans = int(input(
                 "If a loop runs `for number in range(2): print('Welcome!')`, how many times does 'Welcome!' print? "))
             if ans == 2:
-                print("                                       Correct\n")
+                print("Correct\n")
             else:
                 print("Incorrect. It prints 2 times\n")
             break
@@ -812,7 +815,7 @@ if ans == "A":
 else:
     print("Incorrect! The answer is A.")
 
-print("\n15. What does AND operator need?")
+print("\n15. What does the AND operator need?")
 print("A. Both conditions are True")
 print("B. Only one must be True")
 print("C. Both are False")
