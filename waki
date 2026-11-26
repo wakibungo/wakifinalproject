@@ -1,6 +1,6 @@
-
 tuloy = "y"
 while tuloy == "y":
+  valid = "y"
   print("\n=====================================================|")
   print("        💻ACT102 - WAKI'S CODING TUTORIALS💻         |")
   print("=====================================================|")
@@ -168,7 +168,7 @@ while tuloy == "y":
     print("|      +         ADDITION: add            5 + 3         8                                                 |")
     print("|                two values.                                                                              |")
     print("|                                                                                                         |")
-    print("|      -         SUBTRACT: subtracts      10 - 4        6                                                 |")
+    print("|      -         SUBRACT: subracts        10 - 4        6                                                 |")
     print("|                the second value                                                                         |")
     print("|                to first.                                                                                |")
     print("|                                                                                                         |")
@@ -460,7 +460,7 @@ while tuloy == "y":
     if ans2 == "false":
       print("                                    Correct! \n")
     else:
-      print("                                    Incorrect. The answer is False\n")
+      print("                                    Incorrect. The answer is false\n")
 
     while True:
       ans3 = input("""3. If has_id = 'no' and is_enrolled = 'yes', does (has_id == 'yes' or is_enrolled == 'yes')
@@ -534,9 +534,10 @@ while tuloy == "y":
     tuloy = "n"
 
   else:
-    print("Invalid selection. Please choose a number from 1 to 9.")
+    valid = "n"
+    print("Please choose a number from 1 to 9.")
 
-  if choi != "9":
+  if choi != "9" and valid == "y":
       print("\n===================================================|")
       print("        💻ACT102 - WAKI'S CODING TUTORIALS💻         |")
       print("=====================================================|")
